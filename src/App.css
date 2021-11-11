@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+h1 {
+    background-color: white;
+    font-size: 50px;
+    color: #0e3c7e;
+    font-family: Caveat;
+    text-align: center;
+    box-shadow: 0px 3px 6px 1px lightgray;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+    font-size: 50px;
+    font-family: Caveat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.voteBox {
+    width: 175px;
+    height: 115px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 1px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light {
+    border: 2px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.dark {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.voteButtons button {
+    background-color: #0e3c7e;
+    color: white;
+    border-style: none;
+    margin: 0 2px 0 2px;
+    padding: 5px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.themeChange button {
+    background-color: #0e3c7e;
+    color: white;
+    border-style: none;
+    margin: 0 2px 0 2px;
+    padding: 5px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.fontChange button {
+    background-color: #0e3c7e;
+    color: white;
+    border-style: none;
+    margin: 0 2px 0 2px;
+    padding: 5px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.graph {
+    height: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.chocolate {
+    background-color: #4f2c2c;
+}
+
+.vanilla {
+    background-color: #cbc0ac;
+}
+
+.strawberry {
+    background-color: #de8c91;
+}
+
+.noVote {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.treatType {
+    font-weight: bold;
+}
+
+.noVotes {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button.selected {
+    background-color: lightgray;
+    color: black;
+}
+
+button:hover {
+    background-color: #1e60a9;
+    color: black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-bottom: 75px;
+        padding-left: 40px;
+    }
 }
