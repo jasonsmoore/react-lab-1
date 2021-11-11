@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.header {
+    display: flex;
+    background-color: white;
+    text-align: right;
+    box-shadow: 0px 3px 6px 1px lightgray;
+    margin: 0;
+    justify-content: space-between;
+    padding: 5px 40px 5px 40px
+}
+
+.adContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+    margin: auto;
+    padding-top: 50px;
+}
+
 h1 {
     background-color: white;
     font-size: 50px;
     color: #0e3c7e;
     font-family: Caveat;
     text-align: center;
-    box-shadow: 0px 3px 6px 1px lightgray;
     margin: 0;
 }
 

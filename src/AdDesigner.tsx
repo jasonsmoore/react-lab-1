@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Ad from "./Ad";
 
 function AdDesigner() {
     const [flavor, setFlavor] = useState('');
@@ -10,10 +11,11 @@ function AdDesigner() {
     return (
         <div className='adDesign'>
             <h2>Ad Designer</h2>
-            <div className={`voteBox ${theme}`}>
+            <Ad flavor={flavor} darkTheme={theme === 'dark' ? true : false} fontSize={font} />
+            {/* <div className={`voteBox ${theme}`}>
                 <strong>Vote for:</strong> 
                 <p style={fontChange}>{flavor}</p>
-            </div>
+            </div> */}
             <h3>What to Support</h3>
             <div className='voteButtons'>
                 <button className={ flavor === 'Chocolate' ? 'selected' : '' } onClick={() => setFlavor('Chocolate')}>Chocolate</button>
